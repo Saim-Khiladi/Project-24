@@ -47,7 +47,7 @@ function setup() {
   );
   
   arrow = new PlayerArrow(playerArcher.body.position.x, playerArcher.body.position.y, 100, 10);
-  
+  console.log(arrow)
 }
 
 function draw() {
@@ -61,6 +61,15 @@ function draw() {
   textSize(40);
   text("EPIC ARCHERY", width / 2, 100);
 
+    /*  if (keyIsDown(DOWN_ARROW) && angle < -1.2) {
+        angle += 0.01;
+        Matter.Body.setAngle(arrow.body, angle);
+      }
+  
+      if (keyIsDown(UP_ARROW) && angle > -1.9) {
+        angle -= 0.01;
+        Matter.Body.setAngle(arrow, angle);
+      }*/
  
   playerBase.display();
   player.display();
